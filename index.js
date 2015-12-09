@@ -8,10 +8,9 @@ const matchUrlRe = function (matchUrl, flags) {
 
 const getAttr = function (token, attr) {
   const idx = token.attrIndex(attr);
-  if (idx === -1) {
-    return;
+  if (idx !== -1) {
+    return token.attrs[idx][1];
   }
-  return token.attrs[idx][1];
 };
 
 const buildSrc = function (path, re, profile) {
