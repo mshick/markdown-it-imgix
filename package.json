@@ -1,0 +1,40 @@
+{
+  "name": "markdown-it-imgix",
+  "version": "0.1.0",
+  "description": "Apply an imgix domain and parameters to markdown images.",
+  "main": "index.js",
+  "engines": {
+    "node": ">=5.0.0"
+  },
+  "scripts": {
+    "pretest": "eslint index.js",
+    "test": "mocha",
+    "prepublish": "npm test",
+    "postpublish": "git push && git push --tags"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mshick/markdown-it-imgix.git"
+  },
+  "keywords": [
+    "markdown",
+    "markdown-it",
+    "markdown-it-plugin",
+    "imgix",
+    "images"
+  ],
+  "author": "Michael Shick <m@shick.us>",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/mshick/markdown-it-imgix/issues"
+  },
+  "homepage": "https://github.com/mshick/markdown-it-imgix#readme",
+  "devDependencies": {
+    "eslint": "^1.10.3",
+    "eslint-config-defaults": "^7.1.1",
+    "eslint-plugin-filenames": "^0.2.0",
+    "markdown-it": "^5.0.2",
+    "markdown-it-imsize": "^2.0.1",
+    "mocha": "^2.3.4"
+  }
+}

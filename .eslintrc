@@ -1,0 +1,8 @@
+{
+  "extends": "defaults/configurations/walmart/es6-node",
+  "rules": {
+    "strict": 0,
+    "consistent-this": 0,
+    "max-params": [2, 5]
+  }
+}
